@@ -282,3 +282,82 @@ footer {
 footer span {
   color: var(--red);
 }
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 20px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  .hero {
+    padding: 160px 20px 60px;
+  }
+
+  .hero-logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .services {
+    padding: 60px 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .contact {
+    padding: 60px 20px;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  nav .logo-text {
+    font-size: 1.2rem;
+  }
+
+  nav ul {
+    gap: 14px;
+  }
+
+  nav ul a {
+    font-size: 0.75rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services h2,
+  .contact h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-text h2 {
+    font-size: 1.3rem;
+  }
+}
